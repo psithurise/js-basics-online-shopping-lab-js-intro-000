@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  let price = Math.floor(Math.random() * 101)
  var tempobj = {
-   itemName: item
+   itemName: item,
    itemPrice: price}
  cart.push(tempobj)
  return `${item.itemName} has been added to your cart.`
