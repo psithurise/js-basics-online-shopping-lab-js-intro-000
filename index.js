@@ -50,9 +50,10 @@ function removeFromCart(item) {
   let toRemove = cart.indexOf(item)
   if(toRemove == -1)
     return "That item is not in your cart."
-  else
+  else {
     console.log(cart)
     getCart.splice(toRemove, 1)
+  }
 
 }
 
