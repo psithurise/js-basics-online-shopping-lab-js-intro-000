@@ -47,7 +47,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  console.log(cart)
+  console.log(`array is ${cart}`)
   let toRemove = cart.indexOf(item)
   if(toRemove == -1)
     return "That item is not in your cart."
