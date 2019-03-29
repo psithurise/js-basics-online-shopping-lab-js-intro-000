@@ -51,8 +51,9 @@ function removeFromCart(item) {
   if(toRemove == -1)
     return "That item is not in your cart."
   else
-    getCart.splice(toRemove, 1)
     console.log(cart)
+    getCart.splice(toRemove, 1)
+
 }
 
 function placeOrder(cardNumber) {
