@@ -52,7 +52,7 @@ function removeFromCart(item) {
       let toRemove = cart.indexOf(item)
       return getCart.splice(toRemove, 1)
     }
-  }  
+  }
   return "That item is not in your cart."
 }
 
