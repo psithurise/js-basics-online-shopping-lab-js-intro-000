@@ -30,7 +30,7 @@ function viewCart() {
   else {
     var arr = []
     for(let i = 0; i<cart.length-1; i++) {
-      arr.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice},`)
+      arr.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)
     }
     return `In your cart, you have${arr} and ${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`
   }
