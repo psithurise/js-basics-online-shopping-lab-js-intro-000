@@ -29,10 +29,10 @@ function viewCart() {
     return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
   else {
     var arr = []
-    for(let i = 0; i<cart.length-1; i++) {
-      arr.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)
+    for(let i = 1; i<cart.length-1; i++) {
+      arr.push(`, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)
     }
-    return `In your cart, you have${arr} and ${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`
+    return `In your cart, you have ${getCart()[0].itemName} at ${getCart()[0].itemName}${arr}and ${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`
   }
 }
 
