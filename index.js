@@ -49,8 +49,8 @@ function removeFromCart(item) {
   // write your code here
   for(let i=0; i<cart.length; i++) {
     if(getCart()[i].itemName == item) {
-      let toRemove = cart.indexOf(item)
-      cart.splice(toRemove, 2)
+      let toRemove = cart.indexOf(getCart()[i])
+      cart.splice(toRemove, 1)
     }
   }
   return "That item is not in your cart."
